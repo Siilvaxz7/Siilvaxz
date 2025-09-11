@@ -50,6 +50,29 @@
             height: 1050px;
             border: none;
         }
+        img {
+    max-width: 100%;   /* nunca passa da largura da tela */
+    height: auto;      /* mantém proporção */
+}
+
+body {
+    font-size: 16px;   /* tamanho padrão */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* diminui um pouco o texto em telas menores */
+    }
+
+    .links a {
+        padding: 10px 14px; /* reduz os botões */
+        font-size: 14px;
+    }
+
+    iframe {
+        height: 600px; /* diminui altura no celular */
+    }
+}
     </style>
 </head>
 
@@ -77,3 +100,4 @@
 </body>
 
 </html>
+
