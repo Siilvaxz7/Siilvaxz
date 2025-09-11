@@ -98,7 +98,23 @@ ul li ul li {
             .img-container img {
                 max-width: 90%;
             }
-        }
+            .table-container {
+    width: 100%;
+    overflow-x: auto; /* permite rolar horizontalmente no celular */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* mantém 100% do container */
+    min-width: 600px; /* opcional, evita que fique muito estreita */
+}
+
+table th, table td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+        
     </style>
 </head>
 
@@ -117,7 +133,9 @@ ul li ul li {
     </div>
     <hr>
 
+  
     <!-- TABELA -->
+    <div class="table-container">
     <table>
         <tr>
             <th>Semana</th>
@@ -143,7 +161,7 @@ ul li ul li {
         <tr><th>11º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Quadríceps)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
         <tr><th>12º</th><td>Ombros</td><td>Pernas (Impulsão)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
     </table>
-
+    </div>
     <hr>
     <h2>Lista de Treinos</h2>
     <hr>
@@ -229,4 +247,5 @@ ul li ul li {
 </body>
 
 </html>
+
 
