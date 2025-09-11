@@ -34,18 +34,7 @@
             gap: 10px;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-
-        table th,
-        table td {
-            border: 1px solid white;
-            text-align: center;
-            padding: 8px;
-        }
+       
 
         ul {
             list-style: none;
@@ -90,15 +79,31 @@ ul li ul li {
             ul li ul {
                 margin-left: 15px;
             }
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* permite rolagem horizontal */
+}
 
-            table {
-                font-size: 12px;
-            }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* força tabela mínima */
+}
 
-            .img-container img {
-                max-width: 90%;
-            }
-            .table-container {
+table th, table td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* evita quebra de célula no meio */
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px; /* diminui fonte no celular */
+    }
+}
+
+         
     width: 100%;
     overflow-x: auto; /* permite rolar horizontalmente no celular */
 }
@@ -247,5 +252,6 @@ table th, table td {
 </body>
 
 </html>
+
 
 
