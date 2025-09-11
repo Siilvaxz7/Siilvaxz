@@ -34,27 +34,42 @@
             gap: 10px;
         }
 
-       
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: max-content;
+            min-width: 100%;
+        }
+
+        table th, table td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: center;
+            white-space: nowrap;
+        }
 
         ul {
             list-style: none;
             padding: 0;
         }
 
-       ul li {
-    margin: 10px auto;
-    max-width: 100%;
-    word-wrap: break-word;
-    line-height: 1.5;
-    text-align: center; /* centraliza o texto dos exercícios */
-}
+        ul li {
+            margin: 10px auto;
+            max-width: 100%;
+            word-wrap: break-word;
+            line-height: 1.5;
+            text-align: center; /* centraliza exercícios */
+        }
 
-ul li ul li {
-    text-align: center; /* centraliza os itens da lista interna */
-}
         ul li ul {
             margin-top: 5px;
-            margin-left: 20px;
+            margin-left: 0; /* centralizado */
+            padding-left: 0;
         }
 
         hr {
@@ -72,61 +87,26 @@ ul li ul li {
                 font-size: 18px;
             }
 
+            table {
+                font-size: 12px;
+            }
+
             ul li {
                 font-size: 16px;
             }
 
-            ul li ul {
-                margin-left: 15px;
+            .img-container img {
+                max-width: 90%;
             }
-.table-container {
-    width: 100%;
-    overflow-x: auto; /* permite rolagem horizontal */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 600px; /* força tabela mínima */
-}
-
-table th, table td {
-    border: 1px solid white;
-    padding: 8px;
-    text-align: center;
-    white-space: nowrap; /* evita quebra de célula no meio */
-}
-
-@media (max-width: 768px) {
-    table {
-        font-size: 12px; /* diminui fonte no celular */
-    }
-}
-
-         
-    width: 100%;
-    overflow-x: auto; /* permite rolar horizontalmente no celular */
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%; /* mantém 100% do container */
-    min-width: 600px; /* opcional, evita que fique muito estreita */
-}
-
-table th, table td {
-    border: 1px solid white;
-    padding: 8px;
-    text-align: center;
-}
-        
+        }
     </style>
 </head>
 
 <body>
     <!-- TÍTULO -->
     <h1>
-        <img src="img/halter1.png" width="25" alt="halter"> Treinos <img src="img/halter1.png" width="25" alt="halter">
+        <img src="img/halter1.png" width="25" alt="halter"> Treinos 
+        <img src="img/halter1.png" width="25" alt="halter">
     </h1>
     <hr>
 
@@ -138,35 +118,34 @@ table th, table td {
     </div>
     <hr>
 
-  
     <!-- TABELA -->
     <div class="table-container">
-    <table>
-        <tr>
-            <th>Semana</th>
-            <th>Segunda</th>
-            <th>Terça</th>
-            <th>Quarta</th>
-            <th>Quinta</th>
-            <th>Sexta</th>
-            <th>Sábado</th>
-            <th>Domingo</th>
-        </tr>
-
-        <tr><th>1º</th><td>Pernas (Posterior)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Descanso</td></tr>
-        <tr><th>2º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Impulsão)</td><td>Peito</td><td>Descanso</td></tr>
-        <tr><th>3º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Posterior)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
-        <tr><th>4º</th><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
-        <tr><th>5º</th><td>Pernas (Impulsão)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Posterior)</td><td>Descanso</td></tr>
-        <tr><th>6º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Peito</td><td>Descanso</td></tr>
-        <tr><th>7º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Impulsão)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
-        <tr><th>8º</th><td>Ombros</td><td>Pernas (Posterior)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
-        <tr><th>9º</th><td>Pernas (Quadríceps)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Impulsão)</td><td>Descanso</td></tr>
-        <tr><th>10º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Posterior)</td><td>Peito</td><td>Descanso</td></tr>
-        <tr><th>11º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Quadríceps)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
-        <tr><th>12º</th><td>Ombros</td><td>Pernas (Impulsão)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
-    </table>
+        <table>
+            <tr>
+                <th>Semana</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr><th>1º</th><td>Pernas (Posterior)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Descanso</td></tr>
+            <tr><th>2º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Impulsão)</td><td>Peito</td><td>Descanso</td></tr>
+            <tr><th>3º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Posterior)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
+            <tr><th>4º</th><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
+            <tr><th>5º</th><td>Pernas (Impulsão)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Posterior)</td><td>Descanso</td></tr>
+            <tr><th>6º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Peito</td><td>Descanso</td></tr>
+            <tr><th>7º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Impulsão)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
+            <tr><th>8º</th><td>Ombros</td><td>Pernas (Posterior)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
+            <tr><th>9º</th><td>Pernas (Quadríceps)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Impulsão)</td><td>Descanso</td></tr>
+            <tr><th>10º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Posterior)</td><td>Peito</td><td>Descanso</td></tr>
+            <tr><th>11º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Quadríceps)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
+            <tr><th>12º</th><td>Ombros</td><td>Pernas (Impulsão)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
+        </table>
     </div>
+
     <hr>
     <h2>Lista de Treinos</h2>
     <hr>
@@ -250,8 +229,4 @@ table th, table td {
         </li>
     </ul>
 </body>
-
 </html>
-
-
-
