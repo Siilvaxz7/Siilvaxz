@@ -7,226 +7,462 @@
     <meta name="author" content="eduardo da silva">
     <meta name="description" content="Meus Treinos">
     <title>Treinos</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 10px;
-        }
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-        h1, h2 {
-            text-align: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 5px auto;
-        }
-
-        .img-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .table-container {
-            width: 100%;
-            overflow-x: auto;
-            margin: 20px 0;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: max-content;
-            min-width: 100%;
-        }
-
-        table th, table td {
-            border: 1px solid white;
-            padding: 8px;
-            text-align: center;
-            white-space: nowrap;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px auto;
-            max-width: 100%;
-            word-wrap: break-word;
-            line-height: 1.5;
-            text-align: center; /* centraliza exercícios */
-        }
-
-        ul li ul {
-            margin-top: 5px;
-            margin-left: 0; /* centralizado */
-            padding-left: 0;
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid white;
-            margin: 20px 0;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 20px;
-            }
-
-            h2 {
-                font-size: 18px;
-            }
-
-            table {
-                font-size: 12px;
-            }
-
-            ul li {
-                font-size: 16px;
-            }
-
-            .img-container img {
-                max-width: 90%;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <!-- TÍTULO -->
-    <h1>
-        <img src="img/halter1.png" width="25" alt="halter"> Treinos 
-        <img src="img/halter1.png" width="25" alt="halter">
-    </h1>
-    <hr>
 
-    <!-- IMAGENS -->
-    <div class="img-container">
-        <img src="Img/Ramon.jpeg" alt="Ramon">
-        <img src="Img/Pose foda.jpeg" alt="Pose">
-        <img src="Img/Arnold.jpeg" alt="Arnold">
-    </div>
-    <hr>
+    <font color="white">
 
-    <!-- TABELA -->
-    <div class="table-container">
-        <table>
-            <tr>
-                <th>Semana</th>
-                <th>Segunda</th>
-                <th>Terça</th>
-                <th>Quarta</th>
-                <th>Quinta</th>
-                <th>Sexta</th>
-                <th>Sábado</th>
-                <th>Domingo</th>
-            </tr>
-            <tr><th>1º</th><td>Pernas (Posterior)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Descanso</td></tr>
-            <tr><th>2º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Impulsão)</td><td>Peito</td><td>Descanso</td></tr>
-            <tr><th>3º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Posterior)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
-            <tr><th>4º</th><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
-            <tr><th>5º</th><td>Pernas (Impulsão)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Posterior)</td><td>Descanso</td></tr>
-            <tr><th>6º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Quadríceps)</td><td>Peito</td><td>Descanso</td></tr>
-            <tr><th>7º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Impulsão)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
-            <tr><th>8º</th><td>Ombros</td><td>Pernas (Posterior)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
-            <tr><th>9º</th><td>Pernas (Quadríceps)</td><td>Peito</td><td>Descanso</td><td>Costas</td><td>Ombros</td><td>Pernas (Impulsão)</td><td>Descanso</td></tr>
-            <tr><th>10º</th><td>Peito</td><td>Costas</td><td>Descanso</td><td>Ombros</td><td>Pernas (Posterior)</td><td>Peito</td><td>Descanso</td></tr>
-            <tr><th>11º</th><td>Costas</td><td>Ombros</td><td>Descanso</td><td>Pernas (Quadríceps)</td><td>Peito</td><td>Costas</td><td>Descanso</td></tr>
-            <tr><th>12º</th><td>Ombros</td><td>Pernas (Impulsão)</td><td>Descanso</td><td>Peito</td><td>Costas</td><td>Ombros</td><td>Descanso</td></tr>
-        </table>
-    </div>
+        <!--TÍTULO-->
+        <h1 align="center"> <img src="img/halter1.png" width="25"> <i> Treinos </i> <img src="img/halter1.png" width=25>
+        </h1>
+        <hr>
+        <!--IMAGEM-->
+        <p>
+        <div class="imagens">
+            <img src="Img/Ramon.jpeg" alt="Ramon" width="400" height="400" class="ramon">
+            <img src="Img/Pose foda.jpeg" alt="Pose" width="400" height="400" class="pose">
+            <img src="Img/Arnold.jpeg" alt="Arnold" width="400" height="400" class="arnold">
+        </div>
 
-    <hr>
-    <h2>Lista de Treinos</h2>
-    <hr>
+        <!--TABELA-->
 
-    <ul>
-        <li>
-            <b>Perna (Posterior e Glúteos)</b>
-            <ul>
-                <li>Cadeira Adutora e Abdutora Conjugados</li>
-                <li>Cadeira Flexora</li>
-                <li>Mesa Flexora</li>
-                <li>Flexora em Pé</li>
-                <li>Elevação Pélvica</li>
-                <li>Stiff</li>
-                <li>Búlgaro</li>
-            </ul>
-        </li>
+        <hr>
 
-        <li>
-            <b>Perna (Quadríceps e Panturrilha)</b>
-            <ul>
-                <li>Cadeira Extensora</li>
-                <li>Agachamento</li>
-                <li>Leg Press 45</li>
-                <li>Panturrilha em Pé</li>
-                <li>Panturrilha Sentado</li>
-            </ul>
-        </li>
+        <div class="semanas">
+            <div class="tabela-container">
+                <table>
 
-        <li>
-            <b>Perna (Impulsão)</b>
-            <ul>
-                <li>Agachamento com Salto</li>
-                <li>Búlgaro com Halteres</li>
-                <li>Afundo com Salto Halteres</li>
-                <li>Levantamento Terra</li>
-                <li>Salto Caixa</li>
-                <li>Agachamento Unilateral Bolha</li>
-            </ul>
-        </li>
 
-        <li>
-            <b>Peito, Tríceps e Ombros</b>
-            <ul>
-                <li>Supino Reto na Barra</li>
-                <li>Crucifixo Máquina ou Polia</li>
-                <li>Crossover Polia Alta</li>
-                <li>Paralela</li>
-                <li>Supino Inclinado com Halteres</li>
-                <li>Tríceps Corda</li>
-                <li>Tríceps Testa</li>
-                <li>Elevação Lateral</li>
-            </ul>
-        </li>
+                    <!--INÍCIO DA TABELA-->
 
-        <li>
-            <b>Costas, Bíceps e Ombros</b>
-            <ul>
-                <li>Puxada Alta Aberta</li>
-                <li>Pull Down e Face Pull Conjugados</li>
-                <li>Remada Baixa Triângulo</li>
-                <li>Rosca Direta Polia ou Halteres</li>
-                <li>Rosca Scott Barra W ou Unilateral com Halteres</li>
-                <li>Rosca Martelo Corda ou com Halteres</li>
-            </ul>
-        </li>
+                    <tr>
 
-        <li>
-            <b>Ombros e Abdômen</b>
-            <ul>
-                <li>Elevação Lateral com Halteres</li>
-                <li>Desenvolvimento Máquina</li>
-                <li>Elevação Frontal com Halteres</li>
-                <li>Elevação Unilateral (Polia)</li>
-                <li>Face Pull</li>
-                <li>Crucifixo Invertido</li>
-                <li>Abdominal Máquina ou Livre</li>
-                <li>Abdominal Infra na Paralela</li>
-                <li>Prancha</li>
-            </ul>
-        </li>
-    </ul>
+                        <th> Semana </th>
+                        <th> Segunda </th>
+                        <th> Terça </th>
+                        <th> Quarta </th>
+                        <th> Quinta </th>
+                        <th> Sexta </th>
+                        <th> Sábado </th>
+                        <th> Domingo </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 1º </th>
+                        <th> Pernas (Posterior) </th>
+                        <th> Peito </th>
+                        <th> Descanso </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Quadríceps) </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 2º </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Descanso </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Impulsão) </th>
+                        <th> Peito </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 3º </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Descanso </th>
+                        <th> Pernas (Posterior) </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 4º </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Quadríceps) </th>
+                        <th> Descanso </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 5º </th>
+                        <th> Pernas (Impulsão) </th>
+                        <th> Peito </th>
+                        <th> Descanso </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Posterior) </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 6º </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Descanso </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Quadríceps) </th>
+                        <th> Peito </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 7º </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Descanso </th>
+                        <th> Pernas (Impulsão) </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 8º </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Posterior) </th>
+                        <th> Descanso </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 9º </th>
+                        <th> Pernas (Quadríceps) </th>
+                        <th> Peito </th>
+                        <th> Descanso </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Impulsão) </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th> 10º </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Descanso </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Posterior) </th>
+                        <th> Peito </th>
+                        <th> Descanso </th>
+
+                    </tr>
+
+                    <tr>
+                        <th> 11º </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Descanso </th>
+                        <th> Pernas (Quadríceps) </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Descanso </th>
+                    </tr>
+
+                    <tr>
+
+                        <th> 12º </th>
+                        <th> Ombros </th>
+                        <th> Pernas (Impulsão) </th>
+                        <th> Descanso </th>
+                        <th> Peito </th>
+                        <th> Costas </th>
+                        <th> Ombros </th>
+                        <th> Descanso </th>
+
+
+
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <hr>
+
+        <h2 align="center"> Lista de Treinos </h2>
+
+        <hr>
+
+        <ul align="center">
+            <li style="font-size:25px;">
+
+                <p> Perna (Posterior e Glúteos) - </p>
+                <br>
+
+                Cadeira Adutora e Abdutora Conjugados
+
+                <br>
+
+                Cadeira Flexora
+
+                <br>
+
+                Mesa Flexora
+
+                <br>
+
+                Elevação Pélvica
+
+                <br>
+
+                Stiff
+
+                <br>
+
+                Búlgaro
+
+                <br>
+
+
+            </li>
+
+            <br>
+
+            <hr>
+
+
+
+            <li style="font-size:25px;">
+
+                <p> Perna (Quadriceps e Panturrilha) - </p>
+
+                <br>
+
+                Cadeira Extensora
+
+                <br>
+
+                Agachamento
+
+                <br>
+
+                Leg Press 45
+
+                <br>
+
+                Panturrilha em Pé
+
+                <br>
+
+                Panturrilha Sentado
+
+
+
+            </li>
+
+            <br>
+
+            <hr>
+
+
+            <li style="font-size:25px;">
+
+                <p> Perna (Impulsão) - </p>
+
+                <br>
+
+                Agachamento 90º com sobrecarga
+
+                <br>
+
+                Flexora Unilateral
+
+                <br>
+
+                Levantamento Terra Barra H
+
+                <br>
+
+                Elevação Pélvica
+
+                <br>
+
+                Mesa Flexora
+
+
+            </li>
+
+            <br>
+
+            <hr>
+
+
+
+            <li style="font-size:25px;">
+
+                <p> Peito, Tríceps e Ombros - </p>
+
+                <br>
+
+                Supino Inclinado Com Halteres
+
+                <br>
+
+                Crucifixo Maquina ou Polia
+
+                <br>
+
+                Crossover Polia Alta
+
+                <br>
+
+                Paralela
+
+                <br>
+
+                Tríceps Corda ou Pronado
+
+                <br>
+
+                Tríceps Testa
+
+                <br>
+
+                Elevação Lateral
+
+
+
+            </li>
+
+            <br>
+
+            <hr>
+
+
+
+            <li style="font-size:25px;">
+
+                <p> Costas Bíceps e Ombros - </p>
+
+                <br>
+
+                Puxada Alta Aberta
+
+                <br>
+
+                Remada Baixa Triângulo
+
+                <br>
+
+                Pull Down
+
+                <br>
+
+                Face Pull
+
+                <br>
+
+                Rosca Direta Polia ou Halteres
+
+                <br>
+
+                Rosca Scott Barra W Ou Unilateral Com Halteres
+
+                <br>
+
+                Rosca Martelo Corda Ou Com Halteres
+
+
+            </li>
+
+            <br>
+
+            <hr>
+
+            <li style="font-size:25px;">
+
+                <br>
+
+                <p>Ombros e Abdômen - </p>
+
+                <br>
+
+                Elevação Lateral Com Halteres
+
+                <br>
+
+                Desenvolvimento Máquina
+
+                <br>
+
+                Elevação Frontal Com Halteres
+
+                <br>
+
+                Elevação Unilateral (Polia)
+
+                <br>
+
+                Face Pull
+
+                <br>
+
+                Crucifixo Invertido
+
+                <br>
+
+                Abdominal Máquina ou Livre
+
+                <br>
+
+                Abdominal Infra na Paralela
+
+                <br>
+
+                Prancha
+
+            </li>
+
+            <br>
+
+            <hr>
+
+
+
+
+        </ul>
+
+
+
+
 </body>
+
 </html>
